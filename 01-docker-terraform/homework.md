@@ -31,6 +31,7 @@ What's the version of `pip` in the image?
 root@b62bb317ea00:/# pip --version
 pip 24.3.1 from /usr/local/lib/python3.12/site-packages/pip (python 3.12)
 ```
+![Question 1](images/question1.PNG)
 
 ## Question 2. Understanding Docker networking and docker-compose
 
@@ -130,6 +131,8 @@ WHERE
 	AND trip_distance > 1
 	AND trip_distance <= 3
 ```
+![Question 3-1](images/question3-1.PNG)
+![Question 3-2](images/question3-2.PNG)
 
 ## Question 4. Longest trip for each day
 
@@ -160,6 +163,7 @@ WHERE
 GROUP BY
 	DATE(lpep_pickup_datetime)
 ```
+![Question 4](images/question4.PNG)
 
 ## Question 5. Three biggest pickup zones
 
@@ -190,6 +194,8 @@ GROUP BY
 HAVING
 	SUM(t.total_amount) > 13000
 ```
+![Question 5](images/question5.PNG)
+
 ## Question 6. Largest tip
 
 For the passengers picked up in October 2019 in the zone
@@ -225,6 +231,7 @@ GROUP BY
 ORDER BY
 	tip DESC
 ```
+![Question 6](images/question6.PNG)
 
 ## Terraform
 
